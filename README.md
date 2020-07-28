@@ -10,8 +10,8 @@ The project is covered with unit test where it is possible and have scenario tes
 Here are some screenshots:
 
 
-![screenshot1](https://github.com/SzymonPietraszek/Flags/blob/master/screenshots/Screenshot1.png)
-![screenshot1](https://github.com/SzymonPietraszek/Flags/blob/master/screenshots/Screenshot2.png)
-![screenshot1](https://github.com/SzymonPietraszek/Flags/blob/master/screenshots/Screenshot3.png)
-![screenshot1](https://github.com/SzymonPietraszek/Flags/blob/master/screenshots/Screenshot4.png)
+![](screenshots/Screenshot4.png)
+![](screenshots/Screenshot3.png)
+![screenshot1](screenshots/Screenshot2.png)
+![screenshot1](screenshots/Screenshot1.png)
 ![screenshot1](screenshots/classDiagram.png)
