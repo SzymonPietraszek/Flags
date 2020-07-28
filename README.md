@@ -10,7 +10,7 @@ The project is covered with unit test where it is possible and have scenario tes
 Here are some screenshots:
 
 
-(screenshots/Screenshot4.png)
+!(screenshots/Screenshot4.png)
 (screenshots/Screenshot3.png)
 (screenshots/Screenshot2.png)
 ![screenshot1](screenshots/Screenshot1.png)
