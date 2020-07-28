@@ -3,3 +3,6 @@ Flags is a game application written in Java Swing. The idea is to find by the ap
 
 
 ![screenshot1](https://github.com/SzymonPietraszek/Flags/blob/master/screenshots/Screenshot1.png)
+![screenshot1](https://github.com/SzymonPietraszek/Flags/blob/master/screenshots/Screenshot2.png)
+![screenshot1](https://github.com/SzymonPietraszek/Flags/blob/master/screenshots/Screenshot3.png)
+![screenshot1](https://github.com/SzymonPietraszek/Flags/blob/master/screenshots/Screenshot4.png)
