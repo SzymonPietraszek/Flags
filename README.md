@@ -14,3 +14,4 @@ Here are some screenshots:
 ![screenshot1](https://github.com/SzymonPietraszek/Flags/blob/master/screenshots/Screenshot2.png)
 ![screenshot1](https://github.com/SzymonPietraszek/Flags/blob/master/screenshots/Screenshot3.png)
 ![screenshot1](https://github.com/SzymonPietraszek/Flags/blob/master/screenshots/Screenshot4.png)
+![screenshot1](screenshots/classDiagram.png)
