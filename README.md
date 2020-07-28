@@ -1,5 +1,5 @@
 # Flags
-Flags is a game application written in Java Swing. It was one of projects made for classes “Basics of machine learning” and represents the knowledge base type of machine learning.
+Flags is a game application written in Java (IntelliJ). It was one of projects made for classes “Basics of machine learning” and represents the knowledge base type of machine learning.
 
 The idea is to find by the app a graphic of national flag secretly chosen by the user. To do so, it asks closed questions about flags. There are 23 questions that are scored by algorithm to find such that two groups of flags (answer for the question is Yes or No) are roughly the same size (divided in half). This was achieved by asking two questions with conjunction and/or.
 
