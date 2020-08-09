@@ -8,9 +8,8 @@ public class QuestionAndAnswer {
 
     QuestionAndAnswer(String question, int[] flagsWithYes) {
         this.QUESTION = question;
-        for (int flag : flagsWithYes) {
+        for (int flag : flagsWithYes)
             FLAGS_ANSWER.set(flag);
-        }
     }
 
     public boolean getAnswer(int flag) {
