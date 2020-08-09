@@ -49,20 +49,18 @@ public class Frontend extends JFrame implements ActionListener {
         setVisible(false);
         getContentPane().removeAll();
         repaint();
-        if (backend.noFlagsLeft() || backend.oneFlagLeft()) {
+        if (backend.noFlagsLeft() || backend.oneFlagLeft())
             answer();
-        } else {
+        else
             question();
-        }
         setVisible(true);
     }
 
     private void answer() {
-        if (backend.noFlagsLeft()) {
+        if (backend.noFlagsLeft())
             noFlagsAnswer();
-        } else if (backend.oneFlagLeft()) {
+        else if (backend.oneFlagLeft())
             oneFlagsAnswer();
-        }
     }
 
     private void noFlagsAnswer(){
@@ -88,11 +86,10 @@ public class Frontend extends JFrame implements ActionListener {
     private JPanel questionPanel() {
         JPanel panel = new JPanel();
 
-        if (backend.areTwoLastFlagsTheSame()) {
+        if (backend.areTwoLastFlagsTheSame())
             theSameFlagsLeftQuestion(panel);
-        } else {
+        else
             panel.add(new JLabel(backend.getQuestion(), JLabel.CENTER));
-        }
         panel.add(button("Yes"));
         panel.add(button("No"));
         return panel;
@@ -108,11 +105,9 @@ public class Frontend extends JFrame implements ActionListener {
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(0, flagsInRow));
 
-        for (int i = 0; i < backend.numberOfFlags(); i++) {
-            if (backend.isFlagActive(i)) {
+        for (int i = 0; i < backend.numberOfFlags(); i++)
+            if (backend.isFlagActive(i))
                 panel.add(flagLabel(i));
-            }
-        }
         return new JScrollPane(panel, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
     }
 
@@ -130,7 +125,6 @@ public class Frontend extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
         if (e.getActionCommand().equals("Yes")) {
             sendResponse(true);
         } else if (e.getActionCommand().equals("No")) {
@@ -144,11 +138,10 @@ public class Frontend extends JFrame implements ActionListener {
     }
 
     private void sendResponse(boolean answer){
-        if(backend.areTwoLastFlagsTheSame()){
+        if(backend.areTwoLastFlagsTheSame())
             backend.changeActiveFlagsAfterLastQuestion(answer);
-        }else{
+        else
             backend.changeActiveFlagsAfterQuestion(answer);
-        }
         nextScreen();
     }
 
