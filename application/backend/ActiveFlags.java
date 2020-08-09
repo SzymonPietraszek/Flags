@@ -70,10 +70,9 @@ public class ActiveFlags {
     public void changeActiveFlagsAfterLastQuestion(boolean answer) {
         int firstActiveFlag = getFirstActiveFlagNumber();
         int secondActiveFlag = getFirstActiveFlagNumber(firstActiveFlag + 1);
-        if (answer) {
+        if (answer)
             deactivate(secondActiveFlag);
-        } else {
+        else
             deactivate(firstActiveFlag);
-        }
     }
 }

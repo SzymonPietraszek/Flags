@@ -27,13 +27,17 @@ public class Question {
     }
 
     public boolean getAnswerFor(int flag) {
-        if (isSingleQuestion()) {
+        if (isSingleQuestion())
             return Data.getAnswer(questionNumber1, flag);
-        } else if (isConjunctionAnd()) {
+        else
+            return getAnswerForMultipleQuestions(flag);
+    }
+    
+    private boolean getAnswerForMultipleQuestions(int flag) {
+        if (isConjunctionAnd())
             return (Data.getAnswer(questionNumber1, flag) && Data.getAnswer(questionNumber2, flag));
-        } else {
+        else//OR
             return (Data.getAnswer(questionNumber1, flag) || Data.getAnswer(questionNumber2, flag));
-        }
     }
 
     public int getScore() {
@@ -59,18 +63,16 @@ public class Question {
     }
 
     private void addToScore(int flag) {
-        if (isSingleQuestion()) {
+        if (isSingleQuestion())
             score += (Data.getAnswer(questionNumber1, flag) ? 1 : -1);
-        } else {
+        else
             score += addToScoreMultipleQuestions(flag);
-        }
     }
 
     private int addToScoreMultipleQuestions(int flag) {
-        if (isConjunctionAnd()) {
+        if (isConjunctionAnd())
             return (Data.getAnswer(questionNumber1, flag) && Data.getAnswer(questionNumber2, flag)) ? 1 : -1;
-        } else {//OR
+        else//OR
             return (Data.getAnswer(questionNumber1, flag) || Data.getAnswer(questionNumber2, flag)) ? 1 : -1;
-        }
     }
 }
